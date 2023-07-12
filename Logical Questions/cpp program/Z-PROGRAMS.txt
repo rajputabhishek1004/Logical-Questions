@@ -1,0 +1,384 @@
+HCF AND LCM --
+
+#include<iostream>
+using namespace std;
+int main(){
+	int a,b,x,y,r,lcm,hcf;
+	cout<<"enter first number = ";
+	cin>>a;
+	cout<<"enter second number = ";
+	cin>>b;
+	x=a;
+	y=b;
+	while(true){
+		lcm=a;
+		r=a%b;
+		if(r==0){
+			break;
+		}
+		a=a*2;
+	}
+	hcf=x*y/lcm;
+	cout<<"lcm of your two number = "<<lcm<<endl;
+	cout<<"hcf of your two number = "<<hcf<<endl;
+}
+
+
+PRIME NUMBER --
+
+#include<iostream>
+using namespace std;
+int main(){
+	int n,i;
+	cout<<"enter any number = ";
+	cin>>n;
+	for(i=2;i<n;i++){
+		if(n%i==0){
+			cout<<"not a prime number";
+			break;
+		}
+		}
+		if(i==n){
+		
+		cout<<"its a prime number";
+	}
+}
+
+factorial --
+
+#include<iostream>
+using namespace std;
+int main(){
+	int n,f,i;
+	cout<<"enter any number = ";
+	cin>>n;
+	f=n;
+	for(i=1;i<n;i++){
+		f=f*i;
+		}
+		cout<<"factorial of your number is = "<<f;
+}
+
+fabonnacci series --
+
+#include<iostream>
+using namespace std;
+int main(){
+	int n1=0,n2=1,n3,i,n;
+	cout<<"enter number = ";
+	cin>>n;
+	cout<<"your series is = ";
+	cout<<n1<<n2;
+	for (i=1;i<=n;i++){
+		n3=n1+n2;
+		n1=n2;
+		n2=n3;
+		cout<<n3;
+	}
+}
+
+ODD AND EVEN NUMBER --
+
+#include<iostream>
+using namespace std;
+int main(){
+	int n;
+	cout<<"enter any number = ";
+	cin>>n;
+	if(n%2==0){
+		cout<<"number is even";
+	}
+	else{
+		cout<<"number is odd";
+	}
+}
+
+SWAPPING VALUES --
+
+#include<iostream>
+using namespace std;
+int main(){
+	int a,b,c;
+	cout<<"enter your first number = ";
+	cin>>a;
+	cout<<"enter your second number = ";
+	cin>>b;
+	c=a;
+	a=b;
+	b=c;
+	cout<<"swapped value of a is = "<<a<<endl;
+	cout<<"swapped value of b is = "<<b<<endl;
+	
+}
+
+//second method
+
+#include<iostream>
+using namespace std;
+int main(){
+	int a,b;
+	cout<<"enter your first number = ";
+	cin>>a;
+	cout<<"enter your second number = ";
+	cin>>b;
+    a=a+b;
+    b=a-b;
+    a=a-b;
+	cout<<"swapped value of a is = "<<a<<endl;
+	cout<<"swapped value of b is = "<<b<<endl;
+	
+}
+
+CHECK VOWELS --
+
+#include<iostream>
+using namespace std;
+int main(){
+	char c;
+	cout<<"entyer any character (capital or small) = ";
+	cin>>c;
+	switch(c){
+	case 'a':
+		cout<<"its a vowel";
+		break;
+	case 'A':
+		cout<<"its a vowel";
+		break;
+	case 'e':
+		cout<<"its a vowel";
+		break;
+	case 'E':
+		cout<<"its a vowel";
+		break;
+	case 'i':
+		cout<<"its a vowel";
+		break;
+	case 'I':
+		cout<<"its a vowel";
+		break;
+	case 'o':
+		cout<<"its a vowel";
+		break;
+	case 'O':
+		cout<<"its a vowel";
+		break;
+	case 'u':
+		cout<<"its a vowel";
+		break;
+	case 'U':
+		cout<<"its a vowel";
+		break;
+	
+	default:
+		cout<<"its consonant";
+		break;
+		
+}
+}
+
+LEAP YEAR --
+
+#include<iostream>
+using namespace std;
+int main(){
+	int year;
+	cout<<"enter any year = ";
+	cin>>year;
+	if(year%400==0){
+		cout<<"year is leap year";
+	}
+	else if(year%4){
+		cout<<"year is leap year";
+	}
+	else if(year%100){
+		cout<<"year is not leap year";
+	}
+	else{
+		cout<<"year is not leap year";
+	}
+}
+
+REVERSE TABLE --
+
+#include<iostream>
+using namespace std;
+int main(){
+	int i=20;
+	do{
+		cout<<i<<" ";
+		i-=2;
+	}while(i>=2);
+}
+
+POLINDROME NUMBER --
+
+#include<iostream>
+using namespace std;
+int main(){
+	int n,sum=0,t,r;
+	cout<<"enter a number = ";
+	cin>>n;
+	t=n;
+	while(n!=0){
+		r=n%10;
+		sum=sum*10+r;
+		n=n/10;
+	}
+	if(t==sum){
+		cout<<"number is polindrome number";
+	}
+	else{
+	 cout<<"number is not polindrome number";
+	}
+}
+
+ARMSTRONG NUMBER --
+
+#include<iostream>
+using namespace std;
+int main(){
+	int n,sum=0,r;
+	cout<<"enter a number = ";
+	cin>>n;
+	while(n!=0){
+		r=n%10;
+		sum=sum+r*r*r;
+		n=n/10;
+	}
+
+	cout<<"armstrong number is = "<<sum;
+	
+}
+
+HELLO WORLD WITHOUT COLON --
+
+#include<iostream>
+using namespace std;
+int main(){
+	if(cout<<"hello world"){
+		
+	}
+}
+
+
+PERFECT SQUARE --
+
+include<iostream>
+using namespace std;
+int main(){
+	int n;
+	cout<<"enter any number";
+	cin>>n;
+	int s=sqrt(n);
+	if(s*s==n){
+		cout<<"number is perfect square";
+	}
+	else{
+		cout<<"number is npot perfect square";
+	}
+}
+
+
+REVERSE ARRAY --
+
+#include<iostream>
+using namespace std;
+int main(){
+	int arr[5],i;
+	cout<<"enter five array numbers = ";
+	for(i=0;i<=4;i++) {
+		cin>>arr[i];
+	}
+	
+	for(i=4;i>=0;i--){
+		cout<<"reversed array is = "<<arr[i]<<" ";
+	}
+}
+
+REVERSE STRING --
+
+#include<iostream>
+#include<string.h>
+using namespace std;
+int main(){
+	char str[]="abhishek rajput";
+	int length = strlen(str);
+	for(int i=length-1;i>=0;i--){
+		cout<<str[i];
+	}
+}
+
+temperature --
+
+1--
+#include<iostream>
+using namespace std;
+int main(){
+	int c,f;
+	cout<<"enter temperature in celcius = ";
+	cin>>c;
+	f=(c*9/5)+32;
+	cout<<"temperature in fahrenheit = "<<f;
+	}
+
+2--
+#include<iostream>
+using namespace std;
+int main(){
+	int c,f;
+	cout<<"enter temperature in fahrenheit = ";
+	cin>>f;
+	c=5/9*(f-32);
+	cout<<"temperature in celcius = "<<c;
+	}
+
+SUM OF DIGITS --
+
+#include<iostream>
+using namespace std;
+int main(){
+	int n,sum=0,r;
+	cout<<"enter a number = ";
+	cin>>n;
+	while(n!=0){
+		r=n%10;
+		sum=sum+r;
+		n=n/10;
+	}
+
+	cout<<"sum of digits is = "<<sum;
+	
+}
+
+REVERSE OF A NUMBER --
+
+#include<iostream>
+using namespace std;
+int main(){
+	int n,sum=0,r;
+	cout<<"enter a number = ";
+	cin>>n;
+	while(n!=0){
+		r=n%10;
+		sum=sum*10+r;
+		n=n/10;
+	}
+
+	cout<<"sum of digits is = "<<sum;
+	
+}
+
+ALL FACTORS OF NUMBER --
+
+#include<iostream>
+using namespace std;
+int main(){
+	int  a;
+	cout<<"entyer any number = ";
+	cin>>a;
+	for(int i=1;i<a;i++){
+		if(a%i==0){
+			cout<<i<<" ";
+		}
+	}
+}
